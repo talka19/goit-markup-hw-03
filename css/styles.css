@@ -17,6 +17,13 @@
 
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 body {
   background-color: var(--fone-color);
   color: var(--primary-text-color);
@@ -37,7 +44,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* header */
 .header-page {
@@ -138,10 +150,11 @@ margin-left: auto;
 .hero {
 text-align: center;
 background-color: #2F303A;
+padding-top: 200px;
+padding-bottom: 200px;
 }
 
 .hero-title {
-padding: 200px 0px 30px 0px;
 max-width: 696px;
 margin: 0;
 margin-right: auto;
@@ -158,10 +171,10 @@ text-transform: uppercase;
   /* button */
 
   .button {
+  margin-top: 30px;
   display: inline-block;  
   border-radius: 4px; 
   padding: 10px 32px;
-  margin-bottom: 200px;
   min-width: 216px;
   border: 1px solid transparent;
 
@@ -207,10 +220,6 @@ text-transform: uppercase;
     margin-right: 0;
   }
 
-  .section-benefits .container {
-   padding: 94px 15px;
-  }
-
   .section-benefits .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -229,7 +238,6 @@ text-transform: uppercase;
   .section-benefits-list {
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 94px;
   }
 
   .section-benefits-list .text {
@@ -239,7 +247,10 @@ text-transform: uppercase;
 
 /* examples */
 
-  .head-title {
+.projects {
+  padding-top: 0;
+}
+.head-title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -247,7 +258,7 @@ text-transform: uppercase;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  }
+}
 
   .head-title-list .item {
     width: calc((100% - 60px) / 3);
@@ -264,17 +275,10 @@ text-transform: uppercase;
 
   /* our teams */
 
-  .section-team .container {
-    padding: 94px 15px;
-    margin: 0 auto;
+  .section-team {
+    background-color: #F5F4FA;
   }
-   
-  .section-team-list .our-team {
-    border-top: none;
-    border: 1px solid #EEEEEE;
-    border-radius: 0px 0px 4px 4px;
-  }
-
+  
   .section-team .title {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -299,6 +303,8 @@ text-transform: uppercase;
     margin-right: 30px;
     padding: 0;
     text-align: center;
+    border: 1px solid #EEEEEE;
+    border-radius: 0px 0px 4px 4px;
   }
 
   .section-team-list .item:nth-child(4n) {
@@ -308,17 +314,14 @@ text-transform: uppercase;
   /* footer */
 
   footer {
-    background-color: #000000;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
   }
-
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 51px;  
-}
 
 .footer-logo {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
@@ -335,8 +338,12 @@ text-transform: uppercase;
   }
 
   .footer-contacts .item {
-   padding-bottom: 9px;
+   margin-bottom: 9px;
   }
+
+  .footer-contacts .item:nth-last-child(-n + 1) {
+    margin-bottom: 0;
+  } 
 
   .footer-contacts .link{
     color: rgba(255, 255, 255, 0.6);
@@ -352,6 +359,7 @@ text-transform: uppercase;
   }
 
   /* portfolio.html */
+
 
 .list .btn-primary {
   display: inline-block;
@@ -373,8 +381,7 @@ text-transform: uppercase;
 .button-box .list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -393,6 +400,11 @@ text-transform: uppercase;
   flex-wrap: wrap;
 }
 
+.work-example .image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .work-example .link {
  box-sizing: unset;
 }
@@ -400,6 +412,7 @@ text-transform: uppercase;
 .work-example .description {
   border: 1px solid #EEEEEE;
   border-top: none;
+  padding: 20px 24px;
 }
 
 .work-example .item {
@@ -413,11 +426,11 @@ text-transform: uppercase;
 }
 
 .work-example .item:nth-last-child(-n + 3) {
-  margin-bottom: 94px;
+  margin-bottom: 0px;
 }
 
 .our-works .title {
-  margin: 20px 24px 0px 24px;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -435,7 +448,6 @@ text-transform: uppercase;
 }
 
 .our-works .text {
-  margin: 4px 24px 20px 24px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
