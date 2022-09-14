@@ -12,7 +12,7 @@
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
-  --fone-color: #F5F5F5;
+  --fone-color: #FFFFFF;
   --accent-color: #2196F3;
 
 }
@@ -305,6 +305,7 @@ text-transform: uppercase;
     text-align: center;
     border: 1px solid #EEEEEE;
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--fone-color);
   }
 
   .section-team-list .item:nth-child(4n) {
